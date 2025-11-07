@@ -6,24 +6,24 @@
 #include <string.h>
 #include "order_header_file.h"
 
-orderingstatus ordering = {"N/A", '0', '0', 'N'};
+orderingstatus orderingcheck;
 
 
 void addparcel(void) {
-    orderingstatus *checkingpointer = &ordering;
+    orderingstatus *checkingpointer = &orderingcheck;
     strcpy(checkingpointer->catogry, "Food");
-    checkingpointer->parcelweight = '50';
-    checkingpointer->ETA = '30';
+    checkingpointer->parcelweight = 50;
+    checkingpointer->ETA = 50;
     checkingpointer->orderd = 'Y';
 }
 
 void checkstatus(void) {
-    if (ordering.orderd == 'Y') {
+    if (orderingcheck.orderd == 'Y') {
         printf("Order Success here is your order infomation\n");
         printf("--- Parcel Info ---\n");
-        printf("Cateogry is %c\n", ordering.catogry);
-        printf("Weight is: %d", ordering.parcelweight);
-        printf("The Estimated time until the parcel will arrive is %d mins", ordering.ETA);
+        printf("Cateogry is %s\n", orderingcheck.catogry);
+        printf("Weight is: %d\n", orderingcheck.parcelweight);
+        printf("The Estimated time until the parcel will arrive is %d mins", orderingcheck.ETA);
     } else {
         printf("You have not orderd a parcel");
     }
