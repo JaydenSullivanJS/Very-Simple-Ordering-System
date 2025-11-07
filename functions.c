@@ -14,17 +14,17 @@ void addparcel(void) {
     strcpy(checkingpointer->catogry, "Food");
     checkingpointer->parcelweight = 50;
     checkingpointer->ETA = 50;
-    checkingpointer->orderd = 'Y';
+    checkingpointer->ordered = 'Y';
 }
 
 void checkstatus(void) {
-    if (orderingcheck.orderd == 'Y') {
+    if (orderingcheck.ordered == 'Y') {
         printf("Order Success here is your order infomation\n");
         printf("--- Parcel Info ---\n");
         printf("Cateogry is %s\n", orderingcheck.catogry);
         printf("Weight is: %d\n", orderingcheck.parcelweight);
         printf("The Estimated time until the parcel will arrive is %d mins", orderingcheck.ETA);
     } else {
-        printf("You have not orderd a parcel");
+        printf("You have not ordered a parcel");
     }
 }
