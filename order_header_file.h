@@ -11,9 +11,11 @@ typedef struct ordering {
     char catogry[5];
     int parcelweight;
     int ETA;
+    char orderd;
 } orderingstatus;
 
 orderingstatus orderingcheck;
 
 void checkstatus(void);
 void addparcel(void);
+
