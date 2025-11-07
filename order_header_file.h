@@ -8,7 +8,7 @@
 #endif //VERY_SIMPLE_ORDERING_SYSTEM_ORDER_HEADER_FILE_H
 
 typedef struct ordering {
-    int catogry;
+    char catogry[5];
     int parcelweight;
     int ETA;
 } orderingstatus;
