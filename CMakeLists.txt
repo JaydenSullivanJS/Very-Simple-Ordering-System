@@ -3,4 +3,6 @@ project(Very_Simple_Ordering_System C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Very_Simple_Ordering_System main.c)
+add_executable(Very_Simple_Ordering_System main.c
+        order_header_file.h
+        functions.c)

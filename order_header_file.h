@@ -1,0 +1,19 @@
+//
+// Created by Jayden Sullivan on 07/11/2025.
+//
+
+#ifndef VERY_SIMPLE_ORDERING_SYSTEM_ORDER_HEADER_FILE_H
+#define VERY_SIMPLE_ORDERING_SYSTEM_ORDER_HEADER_FILE_H
+
+#endif //VERY_SIMPLE_ORDERING_SYSTEM_ORDER_HEADER_FILE_H
+
+typedef struct ordering {
+    int catogry;
+    int parcelweight;
+    int ETA;
+} orderingstatus;
+
+orderingstatus orderingcheck;
+
+void checkstatus(void);
+void addparcel(void);
